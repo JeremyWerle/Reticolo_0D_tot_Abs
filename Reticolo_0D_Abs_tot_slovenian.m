@@ -48,9 +48,9 @@ My_Param.material.thickness=[25 75*1e-3 500 3*1e-3 100*1e-3];
 %*************************************************************
 my_plot=1;
 thres=0.21;
-thres2=1e3;
+thres2=1e4;
 thres3=Lam;
-[DH,WDH,INC,C,idx,Dp,Dp2,Dp3,Kp,Cpx_mod]=Whos_Incoherent2(My_Param,thres,my_plot,thres2, thres3);
+[DH,WDH,INC,C,idx,Dp,Dp2,Dp3,Kp,Cpx_mod]=Whos_Incoherent4(My_Param,thres,my_plot,thres2, thres3);
 
 %%
 tic;
