@@ -34,3 +34,4 @@ octave-workspace
 *.png
 *.pdf
 *.fig
+*.mat
