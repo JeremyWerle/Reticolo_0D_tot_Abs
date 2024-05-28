@@ -19,7 +19,17 @@ Initialisation(name, path_simu)
 a=load("Reticolo_0D_Abs_tot_incoherent_new_solar_cell");
 b=load("Reticolo_0D_Abs_tot_coherent_new_solar_cell.mat");
 c=load("Reticolo_0D_Abs_tot_slovenian_new_solar_cell.mat");
+d=load("Reticolo_0D_Abs_tot_slovenian_new_solar_cell_thres_1000.mat");
+%%
 
+figure;
+hold on;
+plot(d.Lam,d.Abs,'k')
+plot(a.Lam0,a.Abs0)
+legend('Slovenian','reference')
+xlabel('Wavelength µm')
+ylabel('Absorbance')
+title('Total Absorbance')
 %% Error in the Solar from lam(1) untill Lam=2.5 µm
 % Error with respect to the coherent simulation
 [~,idx]=min(abs(a.Lam0-2.5))
